@@ -6,17 +6,13 @@ import { ClientQuotes } from "./components/ClientQuotes";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
-//import { Instructors } from "./pages/menu/Instructors";
-//import { SignIn } from "./pages/menu/SignIn";
-//import { Classes } from "./pages/menu/Classes";
-//import { AboutUS } from "./pages/menu/AboutUs";
-import { Menu } from "./components/Menu";
+import { Navbar } from "./components/navbar/Navbar";
 
 export const App = () => {
   return (
     <BrowserRouter>
       <div>
-        <Menu />
+        <Navbar />
         <Header />
         <ClientQuotes />
         <Ptext />
