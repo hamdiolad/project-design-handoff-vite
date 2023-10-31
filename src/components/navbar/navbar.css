@@ -1,27 +1,118 @@
-.navbar {
+/*.navbar {
   width: 393px;
   height: 117px;
   flex-shrink: 0;
   background-color: #d9d9d9;
+}*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 393px;
+  height: 117px;
+  background-color: #d9d9d9;
+  padding: 0 20px;
+  position: relative;
 }
 
 .navbar-logo {
   width: 80px;
   height: 80px;
   flex-shrink: 0;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .navbar-menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 19px;
-  backdrop-filter: blur(2px);
+  position: absolute;
+  top: 85px;
+  right: 40px;
+}
+
+.menu-button {
+  background: none; /* Remove background color */
+  border: none; /* Remove the border */
+  padding: 0; /* Remove padding */
+  cursor: pointer; /* Change cursor to a pointer on hover */
+  font-size: 16px; /* Adjust font size as needed */
+  color: #000000; /* Text color */
+  text-decoration: underline; /* Add underline to the text (optional) */
+  /* Add any other styles you desire */
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+
+.button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold; /* Adjust font weight or style */
+  text-decoration: underline; /* Optional: Add underline or other text decoration */
+  /* You can also adjust other text properties like font-family, text-transform, etc. */
+}
+
+.lineA {
+  width: 35px;
+  height: 4px;
   background: #71a59c;
 }
 
-.navbar-menu line {
+.lineB {
+  width: 60px;
+  height: 4px;
+  background: #71a59c;
+}
+
+.lineC {
+  width: 35px;
+  height: 4px;
+  background: #71a59c;
+}
+/*
+ Styling when the menu is open 
+.custom-menu.isOpen .lineA {
+  background: #71a59c;
   width: 35px;
   height: 4px;
 }
+
+
+navbar-menu {
+      display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  backdrop-filter: blur(2px);
+}
+
+
+
+.custom-menu.isOpen .lineB {
+  background: #71a59c;
+  width: 60px;
+  height: 4px;
+}
+
+.custom-menu.isOpen .lineC {
+  background: #71a59c;
+  width: 35px;
+  height: 4px;
+}
+
+/* You can also add other styles such as width, height, or transformations as needed. */

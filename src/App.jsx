@@ -12,7 +12,6 @@ export const App = () => {
   return (
     <BrowserRouter>
       <div>
-        <Navbar />
         <Header />
         <ClientQuotes />
         <Ptext />
@@ -22,6 +21,8 @@ export const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Navbar />
+
         <Footer />
       </div>
     </BrowserRouter>
