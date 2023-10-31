@@ -6,13 +6,17 @@ import { ClientQuotes } from "./components/ClientQuotes";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
-import { Instructors } from "./pages/Instructors";
-import { SignIn } from "./pages/SignIn";
+//import { Instructors } from "./pages/menu/Instructors";
+//import { SignIn } from "./pages/menu/SignIn";
+//import { Classes } from "./pages/menu/Classes";
+//import { AboutUS } from "./pages/menu/AboutUs";
+import { Menu } from "./components/Menu";
 
 export const App = () => {
   return (
     <BrowserRouter>
       <div>
+        <Menu />
         <Header />
         <ClientQuotes />
         <Ptext />
@@ -21,11 +25,12 @@ export const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="instructors" element={<Instructors />} />
-          <Route path="sign in" element={<SignIn />} />
         </Routes>
         <Footer />
       </div>
     </BrowserRouter>
   );
 };
+
+// <Route path="instructors" element={<Instructors />} />
+//<Route path="sign in" element={<SignIn />} />

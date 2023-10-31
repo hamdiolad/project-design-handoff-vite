@@ -1,8 +1,4 @@
-/*export const Ptext = (text) => {
-  return <p className="ptext">{text}</p>;
-}; 
-
-*/
+/* eslint-disable react/prop-types */
 
 export const Ptext = ({ text }) => {
   return <p className="ptext">{text}</p>;
