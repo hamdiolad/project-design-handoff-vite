@@ -1,0 +1,26 @@
+.about-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+.about-card-wrapper .image-container {
+  /* Add styles for image container */
+  /* For example, you can adjust size, margins, or borders */
+  width: 418.929px;
+  height: 616px;
+  flex-shrink: 0;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.about-card-wrapper .text-container {
+  /* Add styles for text container */
+  /* You can adjust font size, margins, or padding */
+}
+
+/* Style the images within the image containers */
+.about-card-wrapper .image-container img {
+  /* Add styles for images */
+  /* You can adjust size, borders, or any other image-specific styles */
+}
